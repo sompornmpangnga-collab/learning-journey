@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ช่องทางการติดต่อ — ธีมสีชมพูข้าว</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* โทนสี: ชมพูอ่อน + สีข้าว (เบจอบอุ่น) */
+    :root{
+      --pink-1: #F9DDE1; /* พื้นหลังชมพูอ่อน */
+      --pink-2: #F3B7C1; /* ปุ่ม / ไฮไลท์ */
+      --rice:   #F7EDE0; /* สีข้าว (เบจอุ่น) */
+      --accent: #D98B9A; /* เน้น */
+      --muted:  #6B4B4F; /* ตัวอักษรเข้ม */
+    }
+
+    /* เล็กน้อยปรับแต่งให้ดูนุ่ม */
+    body{background: linear-gradient(180deg,var(--rice), #fff 60%);} 
+    .glass{background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.45)); backdrop-filter: blur(6px);} 
+  </style>
+</head>
+<body class="min-h-screen font-sans text-[16px] text-[#3B2F2F]">
+  <main class="max-w-5xl mx-auto p-6 lg:p-12">
+    <header class="flex items-center gap-4 mb-8">
+      <div class="w-14 h-14 rounded-xl flex items-center justify-center shadow-sm" style="background:linear-gradient(135deg,var(--pink-1),var(--pink-2));">
+        <!-- simple logo -->
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 3C13.1 3 14 3.9 14 5V11C14 12.1 13.1 13 12 13C10.9 13 10 12.1 10 11V5C10 3.9 10.9 3 12 3Z" fill="#7A3B3E"/>
+          <path d="M5 13H19C20.1 13 21 13.9 21 15V18C21 19.1 20.1 20 19 20H5C3.9 20 3 19.1 3 18V15C3 13.9 3.9 13 5 13Z" fill="#D98B9A"/>
+        </svg>
+      </div>
+      <div>
+        <h1 class="text-2xl lg:text-3xl font-semibold">ติดต่อเรา</h1>
+        <p class="text-sm text-[#6E4E50]">ติดต่อทีมงาน ผ่านช่องทางที่สะดวก — เราพร้อมตอบภายใน 1–2 วันทำการ</p>
+      </div>
+    </header>
+
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- คอลัมน์ซ้าย: ข้อมูลและปุ่ม -->
+      <div class="glass p-6 rounded-2xl shadow-md">
+        <h2 class="text-lg font-medium mb-3">ช่องทางการติดต่อ</h2>
+        <p class="text-sm mb-4">เลือกช่องทางที่คุณสะดวก — โทร, อีเมล, แชท หรือโซเชียลมีเดีย</p>
+
+        <div class="space-y-4">
+          <div class="flex items-start gap-3">
+            <div class="p-3 rounded-xl" style="background:var(--pink-1)">
+              <!-- phone icon -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.6 10.2C8.2 13.9 10.9 16.6 14.6 18.2L17.1 15.7C17.4 15.4 17.9 15.3 18.3 15.4C19.5 15.7 20.9 15.9 22 15.9C22.6 15.9 23 16.3 23 16.9V21C23 21.6 22.6 22 22 22C10.5 22 1 12.5 1 1C1 0.4 1.4 0 2 0H6.1C6.7 0 7.1 0.4 7.1 1C7.1 2.1 7.3 3.5 7.6 4.7C7.7 5.1 7.6 5.6 7.3 5.9L4.8 8.4C5.1 9.7 5.6 8.9 6.6 10.2Z" fill="#7A3B3E"/></svg>
+            </div>
+            <div>
+              <h3 class="font-medium">โทรศัพท์</h3>
+              <p class="text-sm">0x-xxx-xxxx (จันทร์–ศุกร์ 9:00–17:00)</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="p-3 rounded-xl" style="background:var(--rice)">
+              <!-- mail icon -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4C3.45 4 3 4.45 3 5V19C3 19.55 3.45 20 4 20H20C20.55 20 21 19.55 21 19V5C21 4.45 20.55 4 20 4ZM19.07 7.25L12.89 11.54C12.52 11.78 12.09 11.78 11.72 11.54L4.93 7.25H19.07Z" fill="#7A3B3E"/></svg>
+            </div>
+            <div>
+              <h3 class="font-medium">อีเมล</h3>
+              <p class="text-sm">hello@example.com</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="p-3 rounded-xl" style="background:linear-gradient(180deg,var(--pink-1),var(--pink-2))">
+              <!-- location icon -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9C5 13.25 9.6 18.02 11.18 19.58C11.57 19.97 12.2 19.97 12.59 19.58C14.18 18 19 13.25 19 9C19 5.13 15.87 2 12 2Z" fill="#7A3B3E"/></svg>
+            </div>
+            <div>
+              <h3 class="font-medium">ที่อยู่</h3>
+              <p class="text-sm">123 อาคาร ตัวอย่าง, เขตตัวอย่าง, กรุงเทพมหานคร</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="p-3 rounded-xl" style="background:var(--rice)">
+              <!-- chat/social -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3C7.03 3 3 6.58 3 11C3 13.03 3.89 15.01 5.34 16.5V21L9.36 18.75C10.18 18.98 11.07 19.09 12 19.09C16.97 19.09 21 15.51 21 11.09C21 6.67 16.97 3 12 3Z" fill="#7A3B3E"/></svg>
+            </div>
+            <div>
+              <h3 class="font-medium">โซเชียล</h3>
+              <p class="text-sm">Facebook / Instagram / Line @yourhandle</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-6 flex gap-3">
+          <a href="#form" class="inline-block px-4 py-2 rounded-lg font-medium shadow" style="background:var(--pink-2); color:white;">ส่งข้อความหาเรา</a>
+          <a href="mailto:hello@example.com" class="inline-block px-4 py-2 rounded-lg font-medium border" style="border-color:var(--accent);">ส่งอีเมล</a>
+        </div>
+
+      </div>
+
+      <!-- คอลัมน์ขวา: ฟอร์มติดต่อ -->
+      <div class="p-6 bg-white rounded-2xl shadow-md">
+        <h2 class="text-lg font-medium mb-3">แบบฟอร์มติดต่อ</h2>
+        <p class="text-sm mb-4">กรอกข้อมูลแล้วกดส่ง — เจ้าหน้าที่จะติดต่อกลับตามช่องทางที่คุณให้ไว้</p>
+
+        <form id="form" class="space-y-4" onsubmit="handleSubmit(event)">
+          <div>
+            <label class="block text-sm mb-1">ชื่อ-นามสกุล</label>
+            <input required type="text" name="name" placeholder="เช่น สมชาย ใจดี" class="w-full p-3 rounded-lg border border-[#f0e6e6] focus:outline-none focus:ring-2 focus:ring-opacity-70" />
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm mb-1">อีเมล</label>
+              <input required type="email" name="email" placeholder="you@example.com" class="w-full p-3 rounded-lg border border-[#f0e6e6] focus:outline-none focus:ring-2 focus:ring-opacity-70" />
+            </div>
+            <div>
+              <label class="block text-sm mb-1">เบอร์ติดต่อ</label>
+              <input type="tel" name="phone" placeholder="08x-xxx-xxxx" class="w-full p-3 rounded-lg border border-[#f0e6e6] focus:outline-none focus:ring-2 focus:ring-opacity-70" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm mb-1">เรื่อง</label>
+            <input type="text" name="subject" placeholder="หัวข้อที่ต้องการติดต่อ" class="w-full p-3 rounded-lg border border-[#f0e6e6]" />
+          </div>
+
+          <div>
+            <label class="block text-sm mb-1">ข้อความ</label>
+            <textarea required name="message" rows="5" placeholder="พิมพ์ข้อความที่นี่..." class="w-full p-3 rounded-lg border border-[#f0e6e6]"></textarea>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <button type="submit" class="px-5 py-3 rounded-lg font-medium shadow" style="background:var(--accent); color:white;">ส่งข้อความ</button>
+            <button type="reset" class="px-4 py-2 rounded-lg border" style="border-color:var(--pink-2);">ล้างข้อมูล</button>
+          </div>
+
+          <p id="formMessage" class="text-sm text-[#6B4B4F] hidden"></p>
+        </form>
+
+      </div>
+    </section>
+
+    <footer class="mt-10 text-center text-sm text-[#6E4E50]">
+      <p>© <span id="year"></span> ทีมงานตัวอย่าง — ทุกสิทธิ์สงวนไว้</p>
+    </footer>
+  </main>
+
+  <script>
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const form = e.target;
+      const data = Object.fromEntries(new FormData(form));
+
+      // ตัวอย่างการส่ง (จำลอง) — ในโปรดักชันให้เชื่อม API หรือใช้บริการฟอร์ม
+      const msg = document.getElementById('formMessage');
+      msg.classList.remove('hidden');
+      msg.textContent = 'กำลังส่งข้อความ...';
+
+      // จำลองดีเลย์สั้น ๆ แล้วแสดงผลสำเร็จ
+      setTimeout(()=>{
+        msg.textContent = 'ส่งเรียบร้อย! เราจะติดต่อกลับภายใน 1–2 วันทำการ ขอบคุณค่ะ 😊';
+        form.reset();
+      }, 700);
+    }
+  </script>
+</body>
+</html>
